@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+#game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.element {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.rock {
+    background-image: url('carvao.png'); /* Imagem da pedra */
+}
+
+.paper {
+    background-image: url('simbolo-de-arquivo-de-interface-desenhado-a-mao-de-folha-de-papel.png'); /* Imagem do papel */
+}
+
+.scissors {
+    background-image: url('tesouras.png'); /* Imagem da tesoura */
+}
+
+
+
+
+
+
+.scoreboard {
+    position: absolute;
+    top: 20px; /* Distância do topo da tela */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para o centro */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    text-align: center; /* Centraliza o texto */
+}
+
+.players {
+    display: flex; /* Utiliza flexbox para organizar os jogadores */
+    justify-content: space-around;
+     /* Espaçamento igual entre os jogadores */
+}
+
+.player {
+    display: flex; /* Flexbox para alinhar nome e pontuação */
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.name {
+    font-weight: bold; /* Texto em negrito */
+    margin-right: 50px;
+}
+
+.score {
+    font-size: 16px; /* Tamanho da fonte do placar */
+    margin-right: 50px;
+}
+
+
+
+
+/* Estilo para o modal */
